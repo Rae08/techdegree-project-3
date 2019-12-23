@@ -4,8 +4,17 @@ $('#name').focus();
 // initially hides the Your Job Role box
 $('#other-title').hide();
 
+// shows job role if other selected
+$('#title').change(function(event) {
+  const value = event.target.value;
+  if (value === "other") {
+    $('#other-title').show();
+  }
+})
+
+
 $('#design option').first().hide();
-$('#color').prepend("<option>Please select a theme</option>");
+$('#color').prepend("<option>Please select a T-shirt theme</option>");
 $('#color option').eq(0).attr('selected', 'selected');
 $('#color option').hide();
 
