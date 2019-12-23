@@ -214,3 +214,13 @@ option {
 		clear: both;
 	}
 }
+
+div.error, p.error {
+	color: red;
+	font-weight: bold;
+}
+
+input.error  {
+	border: 2px solid #E91E63;
+}
+
